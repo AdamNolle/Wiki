@@ -3,5 +3,3 @@ nav:
   - Home: index.md
   - Classes:
     - Computer Networks: 'senior\Computer_Networks\Computer_Networks.md'
-plugins:
-  - with-pdf

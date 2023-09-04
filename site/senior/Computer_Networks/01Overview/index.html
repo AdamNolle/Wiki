@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>01Overview - School Wiki</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">School Wiki</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Classes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Computer_Networks/" class="dropdown-item">Computer Networks</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#01-overview" class="nav-link">01 - Overview</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#perspective-1-physical-and-information-infrastructure" class="nav-link">Perspective 1: Physical and information infrastructure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#perspective-2-service" class="nav-link">Perspective 2: Service</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#human-protocols-versus-network-protocols" class="nav-link">Human protocols versus Network protocols</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#packet-order" class="nav-link">Packet order</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#network-edge" class="nav-link">Network edge</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#end-systems" class="nav-link">End systems</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dsl-isp" class="nav-link">DSL ISP</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#cable-isp" class="nav-link">Cable ISP</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ethernet-like-campus" class="nav-link">Ethernet (like campus)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wireless" class="nav-link">Wireless</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#terms" class="nav-link">Terms</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#topology" class="nav-link">Topology</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#physical-media" class="nav-link">Physical Media</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wire" class="nav-link">Wire</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#radio" class="nav-link">Radio</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#network-core" class="nav-link">Network core</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#two-key-network-core-functions" class="nav-link">Two key network-core functions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#packet-switching" class="nav-link">Packet Switching</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#to-whom" class="nav-link">To whom?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#routing-and-forwarding" class="nav-link">Routing and forwarding</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#store-and-forward-packet-switching" class="nav-link">Store-and-forward packet switching</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#packet-queuing-and-loss" class="nav-link">Packet queuing and loss</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#circuit-switching" class="nav-link">Circuit switching</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#packet-versus-circuit-switching" class="nav-link">Packet versus circuit switching</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#global-network-structure" class="nav-link">Global network structure</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#nodal-delay-at-router-a" class="nav-link">Nodal delay at router A</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#what-do-real-internet-delay-and-loss-look-like" class="nav-link">What do "real" Internet delay and loss look like?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#commands-to-try" class="nav-link">Commands to try</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dropped-packets" class="nav-link">Dropped packets</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#throughput" class="nav-link">Throughput</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#protocol-layers-service-models" class="nav-link">Protocol layers, service models</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#layered-protocols" class="nav-link">Layered protocols</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#layering" class="nav-link">Layering</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#application" class="nav-link">Application</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#transport" class="nav-link">Transport</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#network" class="nav-link">Network</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#link-datalink" class="nav-link">Link / datalink</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#physical" class="nav-link">Physical</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#osi" class="nav-link">OSI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#network-security" class="nav-link">Network security</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#malware" class="nav-link">Malware</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#attack-server-network-infrasturcture" class="nav-link">Attack server, network infrasturcture</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#sniffing-packets" class="nav-link">Sniffing packets</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#faking-addresses" class="nav-link">Faking addresses</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p><a href="https://www.cnsr.dev/index_files/Classes/Networking/Content/00-Inspiration.html">Source</a></p>
+<h1 id="01-overview">01 - Overview</h1>
+<h2 id="perspective-1-physical-and-information-infrastructure">Perspective 1: Physical and information infrastructure</h2>
+<p><strong>Billions of connected computing devices:</strong>
+- Hosts = end systems
+- running networks apps
+- smart devices </p>
+<p><strong>Communication links:</strong>
+- fiber, copper, radio, satellite
+- transmission rate: bandwidth</p>
+<p><strong>Packet switches:</strong>
+- forward packets (chunks of data)
+- routers and switches </p>
+<p><strong>Inter-networked networks:</strong>
+- Interconnected ISPs</p>
+<p><strong>Protocols:</strong>
+- control sending, receiving of messages
+- e.g., TCP, IP, HTTP, 802.11</p>
+<p><strong>Internet standards:</strong>
+- RFC: Request for comments 
+- IETF: Internet Engineering Task Force</p>
+<h2 id="perspective-2-service">Perspective 2: Service</h2>
+<p><strong>Infrastructure that provides services to applications:</strong>
+- Web, VoIP, games, e-commerce, social nets,...</p>
+<p><strong>Provides programming interface to apps:</strong>
+- hooks that allow sending and receiving app programs to "connect" to Internet 
+- Provides service options, analogous to postal service</p>
+<h2 id="human-protocols-versus-network-protocols">Human protocols versus Network protocols</h2>
+<p>A network protocol is similar to a human protocol, except that the entities exchanging messages and taking actions are hardware or software components of some device (fro example, computer, smartphone tablet, router, or other network-capable device). </p>
+<p>A protocol defines the format and the order of messages exchanged between two or more communicating entities, as well as the actions taken on the transmission and/or receipt of a message or other event. </p>
+<p>All communication activity in Internet governed by protocols, public or proprietary. </p>
+<h2 id="packet-order">Packet order</h2>
+<p>**Arrival order packet joke! is a critical to good a make</p>
+<h2 id="network-edge">Network edge</h2>
+<p>** Network edge:
+- hosts: clients and servers
+- servers often in data centers</p>
+<p><strong>Access networks, physical media:</strong>
+- wired, wireless communication links</p>
+<p><strong>Network core:</strong>
+- interconnected routers network of networks </p>
+<h2 id="end-systems">End systems</h2>
+<p>Hosts = end systems, BOTH clients and servers
+Routers - core</p>
+<h2 id="dsl-isp">DSL ISP</h2>
+<ul>
+<li>Use existing telephone line to central office DSLAM<ul>
+<li>Data over DSL phone line goes to Internet </li>
+<li>Voice over DSL phone line goes to telephone net</li>
+</ul>
+</li>
+<li>&lt; 2.5 Mbps upstream transmission rate (typically &lt; 1 MBbps)</li>
+<li>&lt; 24 Mbps downstream transmission rate (typically &lt; 10 Mbps)</li>
+</ul>
+<h2 id="cable-isp">Cable ISP</h2>
+<ul>
+<li>HFC: hybrid fiber coax<ul>
+<li>asymmetric: up to 30 Mbps downstream transmission rate, 2 Mbps upstream transmission rate</li>
+</ul>
+</li>
+<li>Network of cable, fiber attaches homes to ISP router<ul>
+<li>Homes share access network to cable head-end</li>
+<li>Unlink DSL, which has dedicated access to central office </li>
+</ul>
+</li>
+</ul>
+<p>frequency division multiplexing: different channels transmitted in different frequency bands</p>
+<h2 id="ethernet-like-campus">Ethernet (like campus)</h2>
+<ul>
+<li>Typically used in companies, universities, etc. </li>
+<li>10 Mbps, 100 Mbps, 1 Gbps transmission rates </li>
+<li>Today, end systems typically connect into Ethernet switch </li>
+</ul>
+<h2 id="wireless">Wireless</h2>
+<p>Two uses of the term:</p>
+<ol>
+<li>
+<p><strong>Shared wireless access</strong> network connects end system to router </p>
+<ul>
+<li>via base station aka "access point"</li>
+</ul>
+</li>
+<li>
+<p><strong>Wide-area wireless access</strong></p>
+<ul>
+<li>provided by telco (cellular) operator, 10's km </li>
+<li>between 1 and 10 Mbps</li>
+<li>3G, 4G, LTE, 5G, etc. </li>
+</ul>
+</li>
+</ol>
+<h2 id="terms">Terms</h2>
+<p><strong>Computer networks are often classified in function of the geographical area that they cover.</strong></p>
+<ul>
+<li><strong>LAN:</strong> a local area network typically interconnects hosts that are up to a few or maybe a few tens of kilometers apart. </li>
+<li><strong>MAN:</strong> a metropolitan area network typically interconnects devices that are up to a few hundred kilometers apart</li>
+<li><strong>WAN:</strong> a wide area network interconnect hosts that can be located anywhere on Earth. </li>
+</ul>
+<h2 id="topology">Topology</h2>
+<ul>
+<li>Another classification fo computer networks is based on their physical topology. <ul>
+<li>Full Mesh<ul>
+<li>To allow any host to send messages to any other host in the network, the easiest solution is to organize them as a full-mesh, with a direct and dedicated link between each pair of hosts. </li>
+<li>Such a physical topology is sometimes used, especially when high performance and high redundancy is required for a small number of hosts. </li>
+<li>However, it has two major drawbacks. </li>
+<li>For a network containing n hosts, each host must have n-1 physical interfaces. </li>
+<li>In practice, the number of physical interfaces on a node will limit the size of a full-mesh network that can be built. </li>
+</ul>
+</li>
+<li>Bus<ul>
+<li>The second possible physical organization, which is also used inside computers to connect different extension cards, is the bus. </li>
+<li>In a bus network , all hosts are attached to a shared medium, usually a cable through a single interface. </li>
+<li>When one host sends an electrical signal on the bus, the signal is received by all hosts attached to the bus. </li>
+<li>A drawback of bus-based networks is that if the bus is physically cut, then the network is split into two isolated networks. </li>
+<li>For this reason, bus-based networks are sometimes considered to be difficult to operate and maintain, especially when the cable is long and there are many places where it can break. </li>
+<li>Such a bus-based topology was used in the early Ethernet networks. </li>
+</ul>
+</li>
+<li>Star<ul>
+<li>A third organization of a computer network is a star topology. </li>
+<li>In such topologies, hosts have a single physical interface and there is one physical link between each host and the center of the star. </li>
+<li>The node at the center of the star can be either a piece of equipment that amplifies an electrical signal, or an active device, such as a piece of equipment that understands the format of the messages exchanged through the network. </li>
+<li>However, if one physical link fails (e.g. because the cable has been cut), then only the node is disconnected from the network. </li>
+<li>In practice, star-shaped networks are easier to operate and maintain than bus-shaped networks. </li>
+<li>Many network administrators also appreciate the fact that they can control the network from a central point. </li>
+<li>Administered from a Web interface, or through a console-like connection, the center of the star is a useful point of control (enabling or disabling devices) and an excellent observation point (usage statistics). </li>
+</ul>
+</li>
+<li>Ring<ul>
+<li>A fourth physical organization of a network is the Ring topology. </li>
+<li>Like the bus organization, each host has a single physical interface connecting it to the ring. </li>
+<li>Any signal sent by a hot on the ring will be received by all hosts attached to the ring. </li>
+<li>From a redundancy point of view, a single ring is not the best solution, as the signal only travels in one direction on the ring; <ul>
+<li>Thus if one of the links composing the ring is cut, the entire network fails. </li>
+</ul>
+</li>
+<li>In practice, such rings have been used in local area networks, but are now often replaced by star-shaped networks. </li>
+<li>In metropolitan networks, rings are often used to interconnect multiple locations. </li>
+<li>In this case, two parallel links, composed of different cables, are often used for redundancy. </li>
+<li>With such a dual ring, when one ring fails all the traffic can be quickly switched to the other ring. </li>
+</ul>
+</li>
+<li>Tree<ul>
+<li>A fifth physical organization of a network is the tree. </li>
+<li>Such network are typically used when a large number of customers must be connected in a very cost-effective manner. </li>
+<li>Cable TV networks are often organized as trees. </li>
+</ul>
+</li>
+<li>Hybrid <ul>
+<li>In practice, most real networks combine part of these topologies. </li>
+<li>For example, a campus network can be organized as a ring between the key buildings, while smaller buildings are attached as a tree or a star to important buildings. </li>
+<li>An ISP network may have a full mesh of devices in the core of its network, and trees to connect remote users. </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="physical-media">Physical Media</h2>
+<ul>
+<li>Bits: propagates between transmitter/receiver pairs</li>
+<li>Physical link: what lies between transmitter &amp; receiver </li>
+<li>Guided media:<ul>
+<li>Signal propagate in solid media: copper, fiber, coax </li>
+</ul>
+</li>
+<li>Unguided media:<ul>
+<li>Signals propagate freely, e.g., radio</li>
+</ul>
+</li>
+</ul>
+<h2 id="wire">Wire</h2>
+<ul>
+<li>Coaxial cable:<ul>
+<li>Two concentric copper conductors </li>
+<li>Bidirectional </li>
+<li>Broadband:<ul>
+<li>Multiple channels on cable </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Twisted pair (TP)<ul>
+<li>Two insulated copper wires <ul>
+<li>Category 5: 100 Mbps, 1 Gbps Ethernet </li>
+<li>Category 6: 10 Gbps</li>
+</ul>
+</li>
+<li>Fiber optic cable:<ul>
+<li>Glass fiber carrying light pulses, each pulse a bit</li>
+<li>High-speed operation:<ul>
+<li>High-speed point-to-point transmission (e.g., 10's-100's Gbps transmission rate)</li>
+</ul>
+</li>
+<li>Low error rate:<ul>
+<li>Repeaters spaced far apart </li>
+<li>Immune to electromagnetic noise </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="radio">Radio</h2>
+<ul>
+<li>Signal carried in electromagnetic spectrum </li>
+<li>No physical "wire"</li>
+<li>Bidirectional </li>
+<li>Propagation environment effects:<ul>
+<li>Reflection</li>
+<li>Obstruction by objects</li>
+<li>Interference</li>
+</ul>
+</li>
+<li>Radio link types:<ul>
+<li>Terrestrial microwave<ul>
+<li>e.g. up to 45 Mbps channels</li>
+</ul>
+</li>
+<li>LAN (e.g., WiFi)<ul>
+<li>54 Mbps</li>
+</ul>
+</li>
+<li>Wide-area (e.g., cellular)<ul>
+<li>4G cellular: ~ 10 Mbps</li>
+</ul>
+</li>
+<li>Satellite <ul>
+<li>Kbps to 45 Mbps channel (or multiple smaller channels)</li>
+<li>270 msec end-end delay</li>
+<li>geosynchronous versus low altitude </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="network-core">Network core</h2>
+<ul>
+<li>Mesh of interconnected routers</li>
+<li>Packet-switching:<ul>
+<li>Hosts break application-layer messages into packets</li>
+<li>Forward packets from one router to the next, across links on path from source to destination </li>
+<li>Each packet transmitted at full link capacity </li>
+</ul>
+</li>
+</ul>
+<h2 id="two-key-network-core-functions">Two key network-core functions</h2>
+<p><strong>Routing:</strong>
+- Determines source-destination route taken by packets 
+- A variety of routing algorithms 
+- Operates on longer time-scales </p>
+<p><strong>Forwarding:</strong>
+- Move packets from router's input to appropriate router output 
+- Chooses instant path of packet </p>
+<h2 id="packet-switching">Packet Switching</h2>
+<ul>
+<li>In a network application, end systems exchange messages with each other. </li>
+<li>Messages can contain anything the application designer wants. </li>
+<li>Messages may perform a control function (for example, the "Hi messages in our handshaking example in or can contain data, such as an email message, a JPEG image, or an MP3 audio file.)</li>
+<li>To send a message from a source end system to a destination end system, the source breaks long messages into smaller chunks of data known as packets. </li>
+<li>Between source and destination, each packet travels through communication links and packet switches (for which there are two predominant types, routers and link-layer switches). </li>
+</ul>
+<h2 id="to-whom">To whom?</h2>
+<p><strong>Broadcast</strong></p>
+<p>In TV and radio transmission, broadcast is often used to indicate a technology that send a video or radio signal to all receivers in a given geographical area. Broadcast is sometimes used in computer networks, but only in local area networks where the number of recipients is limited. </p>
+<p><strong>Unicast</strong>
+The first and most widespread transmission mode is called unicast. In the unicast transmission mode, information is sent by one sender to one receiver. The example shows a network with two types of devices: hosts (drawn as computers) and intermediate nodes (drawn as cubes). Hosts exchange information via the intermediate nodes. In the example below when host S uses unicast to send information, it send it via three intermediate nodes. Each of these nodes receives the information from its upstream node or hosts, then processes and forwards it to its downstream node or host. This called store and forward and we will see later that his concept is key in computer networks. </p>
+<p><strong>Multicast</strong> 
+A second transmission mode is multicast transmission mode. This mode is used when the same information must be sent to a set of recipients. It was first used in LANs but later became supported in wide area networks. When a sender uses multicast to send information to N receivers, the send sends a single copy of the information and the network nodes duplicate this information necessary, so that it can reach all recipients belonging to the destination group. </p>
+<p><strong>Anycast</strong>
+The last transmission mode is the anycast transmission mode. It was initially defined in RFC 1542. When a source sends information towards this set of receivers, the network ensures that the information is delivered to one receiver that belongs to this set. </p>
+<h2 id="routing-and-forwarding">Routing and forwarding</h2>
+<ul>
+<li>Every end system has an address called an IP address. </li>
+<li>Source includes the destination's IP address in the packet's header. </li>
+<li>Address had a hierarchial structure. </li>
+<li>Router examines a portion of the packet's destination address and forwards the packet to the best adjacent router. </li>
+<li>Each router has a forwarding table that maps destination addresses (or portions of the destination addresses) to the router's outbound links. </li>
+<li>When a packet arrives at a router, the router examines the address and searches its forwarding table, using this destination address, to find the appropriate outbound link. </li>
+<li>Multiple routing protocols that are used to automatically develop the forwarding tables themselves. </li>
+<li>E.g., determine the shortest path from each router to each destination and use the shortest path results to configure the forwarding tables in the routers. </li>
+</ul>
+<h2 id="store-and-forward-packet-switching">Store-and-forward packet switching</h2>
+<ul>
+<li>Takes L/R seconds to transmit (push out) L-bit packet into link at R bps</li>
+<li>Store and forward: entire packet must arrive at router before it can be transmitted on next link </li>
+<li>End-end delay = 2L/R (assuming zero propagation delay)</li>
+</ul>
+<p>one-hop numerical example: 
+ L = 7.5 Mb
+ R = 1.5 Mb/s 
+ one-hop transmission delay = 5 sec</p>
+<h2 id="packet-queuing-and-loss">Packet queuing and loss</h2>
+<ul>
+<li>If arrival rate (in bits) to link exceeds transmission rate of link for a period of time, packets will queue, wait to be transmitted on link. </li>
+<li>Packets can be dropped (lost) if memory (buffer) fills up</li>
+</ul>
+<h2 id="circuit-switching">Circuit switching</h2>
+<ul>
+<li>End-end resources allocated to, reserved for "call" between source &amp; dest: </li>
+<li>In diagram, each link has four circuits. <ul>
+<li>A call gets 2nd circuit in top link and 1st circuit in right link. </li>
+</ul>
+</li>
+<li>Dedicated resources: no sharing <ul>
+<li>Circuit-like (guaranteed) performance</li>
+</ul>
+</li>
+<li>Circuit segment idle if not used by call (no sharing)</li>
+<li>Commonly used in traditional telephone networks. </li>
+</ul>
+<p>A circuit in a link is implemented with either:
+- Frequency-division multiplexing (FDM) or
+- Time-division multiplexing (TDM)</p>
+<h2 id="packet-versus-circuit-switching">Packet versus circuit switching</h2>
+<ul>
+<li>Example: <ul>
+<li>1 Mb/s link </li>
+<li>Each user: <ul>
+<li>100 kb.s when "active" </li>
+<li>Active 10% of time </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Circuit-switching: <ul>
+<li>10 users </li>
+</ul>
+</li>
+<li>Packet switching:<ul>
+<li>With 35 users, probability &gt; 10 active at same time is less than .0004</li>
+</ul>
+</li>
+</ul>
+<p>Packet switching 
+- Great for bursty data 
+    - Resource sharing 
+    - Simpler, no call setup (reserving a line)
+- Excessive congestion possible: packet delay and loss
+    - Protocols needed for reliable data transfer, congestion control</p>
+<h2 id="global-network-structure">Global network structure</h2>
+<p><strong>Internet structure: network of networks</strong>
+- End systems connect to Internet via access ISPs (Internet Service Providers)
+    - Residential, company, and university ISPs
+- Access ISPs in turn must be interconnected. 
+    - So that any two hosts can send packets to each other 
+-  Resulting network of networks is very complex. 
+- Evolution was driven by economics and national policies
+- Let's take a step-wise approach to describe current Internet structure </p>
+<p><strong>Network of ISPs</strong>
+Not just technical considerations: corporate, historical, collusive, regulatory 
+- At center: small number of well-connected large networks
+    - "Tier-1" commercial ISPs (e.g., Level 3, Sprint, ATT, NTT), national and international coverage
+    - Content provider network (e.g., Google): 
+        - Private network that connects its data centers to Internet, often bypassing tier-1, regional ISPs, 
+    - Internet Exchange Point (IXP) is a meeting point where multiple ISPs can peer together. 
+        - An IXP is typically in a stand-alone building with its own switches. 
+        - There are well over 400 IXps in the Internet "today" (may be out of date)</p>
+<h2 id="nodal-delay-at-router-a">Nodal delay at router A</h2>
+<ul>
+<li>Packets queue in router buffers <ul>
+<li>Packet arrival rate to link (temporarily) exceeds output link capacity </li>
+<li>Packets queue, wait for turn </li>
+</ul>
+</li>
+</ul>
+<p>All delay is not the same. 
+If we let <code>d_proc, d_queue, d_trans, and d_prop</code> denote the processing, queuing, transmission, and propagation delays, then the total nodal delay is given by: </p>
+<p><code>d_nodal = d_proc + d_queue + d_tans + d_prop</code></p>
+<p><strong>Network load</strong>
+The impact of increasing network load is super-linear on delay
+R: link bandwidth (bps)
+L: packet length (bits)
+a: average packet arrival rate</p>
+<p>La/R ~ 0: avg. queueing delay small
+La/R -&gt; 1: avg. queueing delay large
+La/R &gt; 1: more "work" arriving than can be serviced, average delay infinite!</p>
+<h2 id="what-do-real-internet-delay-and-loss-look-like">What do "real" Internet delay and loss look like?</h2>
+<p>The <code>traceroute</code> program delay measurement from source to router along end-end Internet towards destination. </p>
+<p>For all i:
+- Sends three packets that will reach router i on path towards destination 
+- Router i will return packets to sender 
+- Sender times interval between transmission and reply. </p>
+<h2 id="commands-to-try">Commands to try</h2>
+<p>(watch with Wireshark too):</p>
+<pre><code>$ traceroute mst.edu
+$ traceroute www.mst.edu 
+$ traceroute efp1.ch
+$ traceroute www.epf1.ch
+</code></pre>
+<p>Alternative fancier program
+<code>$ mtr epfl.ch</code></p>
+<h2 id="dropped-packets">Dropped packets</h2>
+<p>With no place to store such a packet, a router will drop that packet; that is, the packet will be lost. </p>
+<h2 id="throughput">Throughput</h2>
+<ul>
+<li>In addition to delay and packet loss, another critical performance measure in computer networks is end-to-end throughput. </li>
+<li>To define throughput, consider transferring a large fle from Host A to Host B across a computer network. </li>
+<li>This transfer might be, for example, a large video clip from one peer to another in a P2P file sharing system. </li>
+<li>The instantaneous throughput at any instant of time is the rate (in bits/sec) at which the Host B is receiving the file. </li>
+</ul>
+<p>Bottleneck throughput limitations tend to be servers and local ISPs (edge), not the backbone (core). </p>
+<h2 id="protocol-layers-service-models">Protocol layers, service models</h2>
+<ul>
+<li>Networks are complex, with many "pieces":</li>
+<li>hosts</li>
+<li>routers</li>
+<li>links of various media </li>
+<li>applications </li>
+<li>protocols </li>
+<li>hardware, software </li>
+</ul>
+<h2 id="layered-protocols">Layered protocols</h2>
+<ul>
+<li>To provide structure to the design of network protocols, network designers organize protocols, and the networks hardware and software that implement the protocols, in layers. </li>
+<li>In a theoretical vacuum, each protocol belongs to one of the layers, just as a each function in the airline architecture. </li>
+<li>A protocol layer can be implemented in software, in hardware, or in a combination of the two. </li>
+<li>When taken together, the protocols of the various layers are called a networking protocol stack. </li>
+<li>The Internet protocol stack can be oversimplified to <strong>five layers:</strong><ul>
+<li><strong>1. physical</strong>,</li>
+<li><strong>2. link</strong>, </li>
+<li><strong>3. network</strong>,</li>
+<li><strong>4. transport</strong>, </li>
+<li><strong>5. application</strong>, </li>
+</ul>
+</li>
+</ul>
+<h2 id="layering">Layering</h2>
+<p><strong>Why layering?</strong> </p>
+<ul>
+<li>Explicit structure allows identification, relationship of complex system's pieces </li>
+<li>Modularity eases maintenance, updating of system. </li>
+<li>Change of implementation of layer's service transparent to rest of system. <ul>
+<li>E.g., change in gate procedure doesn't affect rest of system </li>
+</ul>
+</li>
+</ul>
+<p>Internet protocol stack </p>
+<ul>
+<li><strong>1. Application:</strong> <ul>
+<li>Supporting network applications </li>
+<li>FTP, SMTP, HTTP</li>
+</ul>
+</li>
+<li><strong>2. Transport:</strong><ul>
+<li>OS-process to OS-process data transfer </li>
+<li>TCP, UDP, and some more rare others</li>
+</ul>
+</li>
+<li><strong>3. Network:</strong><ul>
+<li>Routing of datagrams from source to destination </li>
+<li>IP, routing protocols </li>
+</ul>
+</li>
+<li><strong>4. Link:</strong> <ul>
+<li>Data transfer between neighboring network elements </li>
+<li>Ethernet, 802.111 (WiFi), ppp, etc. </li>
+</ul>
+</li>
+<li><strong>5. Physical:</strong><ul>
+<li>Bits "on the wire" or "over the airwaves" </li>
+</ul>
+</li>
+</ul>
+<h2 id="application">Application</h2>
+<p><strong>Supporting network applications</strong> 
+- Network applications and their application-layer protocols reside here
+- Examples:
+    - <strong>HTTP</strong> Hypertext Transfer Protocol provides for Web document request and transfer
+    - <strong>SMTP</strong> Simple Mail Transfer Protocol provides for the transfer of e-mail messages
+    - <strong>FTP</strong> (which provides for the transfer of files between two end systems).
+    - <strong>DNS</strong> provides translation of human-friendly names for Internet systems to a 32-bit network address (ipv4). This is also done with the help of a specific application-layer protocol, namely, the Domain Name System (DNS). 
+- An application-layer protocol is distributed over multiple end systems, with the application in one end system using the protocol to exchange packets of information with the application in another end system. 
+- Packet of information at application layer is a <strong>message.</strong>  <br />
+- Encryption often implemented at this layer (though it should at least as low as the Network/IP layer).</p>
+<p>The upper layer of our architecture is the Application layer. This layer includes all the mechanisms and data structures that are necessary for the applications. Our big-picture book calls these packets ADUs. </p>
+<h2 id="transport">Transport</h2>
+<p><strong>OS-Process to OS-process data transfer</strong> 
+- Transports application-layer messages between application endpoints
+- In the current Internet, there are two primary transport protocols, TCP and UDP, either of which can transport application-layer messages. 
+- <strong>TCP</strong> (Transmission Control Protocol) provides a connection-oriented service to its applications. 
+    - Guaranteed delivery of application-layer messages to the destination
+    - Flow control (that is, sender/receiver speed matching). 
+    - Congestion-control mechanism, so that a source throttles its transmission rate when the network is congested. 
+- <strong>UDP</strong> (User Datagram Protocol) protocol provides a connectionless service to its applications. 
+    - No-frills service that provides no reliabiluty, no flow control, and no congestion control. 
+- Transport-layer packet is a <strong>segment</strong>. 
+- Most realizations of the network layer, including the internet, do not provide a reliable service. 
+- However, many applications need to exchange information reliably, and so using the network layer service directly would be very difficult for them 
+- Ensuring the reliable delivery of the data produced by application is the task of the transport layer. 
+- Transport layer entities exchange segments. 
+- A segment is a finite sequence of bytes that are transported inside one or more packets. 
+- A transport layer entity issues segments (or sometimes part of segments) as requests to the underlying network layer entity. 
+- The most widely used transport layers on the Internet are TCP, that provides a reliable connection-oriented bytestream transport service, and USP, that provides an unreliable connection-less transport service. 
+- There are some other interesting transport layer protocols, though they are not as common. </p>
+<h2 id="network">Network</h2>
+<p><strong>Routing of datagrams from source to destination 
+- Responsible for moving network-layer packets known as </strong>datagrams** from one host to another. 
+- Transport-layer protocol (TCP to UDP) from source host passes a transport-layer segment and a destination address to the network layer 
+- Network layer then provides the service of deliverign the segment to the transport layer in the destination host. 
+- Network layer includes the celebrated IP, which defines the fields in the datagram as well as how the end systems and routers act on these fields. 
+- There is only one IP protocol (or two...), and all Internet components that have a network layer must run it. 
+- Network layer also contains many routing protocols that determine the routes
+- The network layer is built above the datalink layer. 
+- The Datalink layer (below) allows directly connected hsts to exchange information, but it is often necessary to exchange information between hosts that are no attached to the same physical medium. 
+- This is the task of the network layer. 
+- Network layer entities exchange packets. 
+- A packet is a finite sequence of bytes that is transported by the datalink inside one or more frames. 
+- A packet usually contains information about its origin and its destination, and usually passes through several intermediate devices called routers on its way from its origin to its destination. </p>
+<h2 id="link-datalink">Link / datalink</h2>
+<p><strong>Data transfer between adjacent nodes</strong></p>
+<ul>
+<li>At each node, the network layer passes the datagram down to the link layer, which delivers the datagram to the next nod along the route. </li>
+<li>At this next node, the link layer passes the datagram up to the network layer. </li>
+<li>Some link-layer protocols provide reliable delivery, from transmitting node, over one link, to receiving node. </li>
+<li>Examples of link-layer protocols include: Ethernet, WiFi, the cable access network's DOCSIS protocol, and more</li>
+<li>A datagram may be handled by Ethernet on one link and by WiDi on the next link. 
+The network layer (above) will receive a different service from each one of the different link-layer protocols. </li>
+<li>Link-layer packets are <strong>frames</strong></li>
+<li>The Datalink layer builds on the service provided by the underlying physical layer. </li>
+<li>The Datalink layer allows two hosts that are directly connected through the physical layer to exchange information. </li>
+<li>The unit of information exchanged between two entities in the Datalink layer is a frame. </li>
+<li>A frame is a finite sequence of bits. </li>
+<li>Some Datalink layers use variable-length frames while others only use fixed-length frames. </li>
+<li>Some Datalink layers provide a connection-oriented service while other provide a connectionless service. </li>
+<li>Some Datalink layers provide reliable delivery while others do not guarantee the correct delivery of the information. </li>
+<li>An important point to note about the Datalink layer is that although the figure below indicates that two entities of the Datalink layer exchange frames directly, in reality this is slightly different. </li>
+<li>When the Datalink layer entity on the left needs to transmit a frame, it issues as many requests to the underlying physical layer as there are bits in the frame. </li>
+<li>The physical layer will then convert the sequence of bits in an electromagnetic or optical signal that will be sent over the physical medium. </li>
+<li>The physical layer on the right hand side of the figure will decode the received signal, recover the bits and issue the corresponding Data. Indication primitives to its Datalink layer entity. </li>
+<li>If there are no transmission errors, this entity will receive the frame sent earlier. </li>
+</ul>
+<h2 id="physical">Physical</h2>
+<p><strong>Bits "on the wire"</strong>
+- The protocols in this layer are again link dependent and further depend on the actual transmission medium of the link (for example, twisted-pair copper wire, single-mode fiber optics).
+- For example, Ethernet has many physical-layer protocols: one for twisted-pair copper wire, another for coaxial cable, another for fiber, and so on. 
+- In each case, a <strong>bit</strong> is moved across the link in a different way. </p>
+<p>An important point to note about the Physical layer is the service that it provides. This service is usually an unreliable connection-oriented service that allows the users of the Physical layer to exchange bits. The unit of information transfer in the Physical layer is the bit. The Physical layer service is unreliable because:
+- The Physical layer may change, e.g. due to electromagnetic interferences, the value of a bit being transmitted 
+- The Physical layer may deliver more bits to the receiver than the bits sent by the sender 
+- The Physical layer may deliver fewer bits to the receiver than the bits sent by the sender
+- The physical layer allows this two or more entities that are directly attached to the same transmission medium to exchange bits. 
+- Being able to exchange bits is important as virtually any information can be encoded as a sequence of bits. 
+- Electrical engineers are used to processing streams of bits, but computer scientists usually prefer to deal with higher level concepts. </p>
+<h2 id="osi">OSI</h2>
+<ul>
+<li><strong>Presentation:</strong> allow applications to interpret meaning of data, e.g., encryption, compression, machine-specific conventions</li>
+<li><strong>Session:</strong> synchronization, checkpointing, recovery of data exchange </li>
+<li>Internet stack "missing" these layers. </li>
+<li>These services, if needed, myst be implemented in application. </li>
+</ul>
+<h2 id="network-security">Network security</h2>
+<ul>
+<li>Internet not originally designed with (much) security in mind </li>
+<li>Original vision: "a group of mutually trusting users attached to a transparent network"</li>
+<li>Internet protocol designers playing "catch-up"</li>
+<li>Security considerations in all layers!</li>
+<li>Field of network security:<ul>
+<li>How bad guys can attack computer networks </li>
+<li>How we can defend networks against attacks </li>
+<li>How to design architectures that are immune to attacks </li>
+</ul>
+</li>
+</ul>
+<p><strong>Types of attack</strong>
+- DoS (Denial of Service) - the most common attack, often easy
+- Packet "sniffing": broadcast media (shared Ethernet, wireless), promiscuous network interface reads/records all packets (e.g., including passwords!) passing by
+- Masquerading
+- and more!</p>
+<h2 id="malware">Malware</h2>
+<ul>
+<li>Malware can get into host from: <ul>
+<li>virus: self-replicating infection by receiving/executing objects (e.g., e-mail attachment)</li>
+<li>worm: self-replicating infection by passively receiving object that gets itself executed </li>
+</ul>
+</li>
+<li>Spyware malware can record keystrokes, web sites visited, upload info to collection site</li>
+<li>Infected host can be rolled in botnet, used for spam. DDoS attacks </li>
+</ul>
+<h2 id="attack-server-network-infrasturcture">Attack server, network infrasturcture</h2>
+<p>Denial of Service (DoS): attackers make resources (server, bandwidth) unavailable to legitimate traffic by overwhelming resource with bogus traffic </p>
+<ol>
+<li>Select target</li>
+<li>Break into hosts </li>
+<li>Send packets to target from compromised hosts</li>
+</ol>
+<h2 id="sniffing-packets">Sniffing packets</h2>
+<ul>
+<li>Packet "sniffing": </li>
+<li>Broadcast media (shared Ethernet, wireless)</li>
+<li>Promiscuous network interface reads/records all packets (e.g., including passwords!) passing by</li>
+<li>Wireshark software is a packet sniffer</li>
+<li>Malicious infrastructure. <ul>
+<li>A trustless "Distrust the infrastructure" is a good policy, even when you don't think it's corrupt. </li>
+</ul>
+</li>
+</ul>
+<h2 id="faking-addresses">Faking addresses</h2>
+<p>IP spoofing: send packet with false source address</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/jquery-3.6.0.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
