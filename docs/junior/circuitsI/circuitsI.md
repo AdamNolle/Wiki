@@ -1,1 +1,1 @@
-![Circuits I Notebook](docs\media\Circuits I.pdf)
+<iframe src="/media/circuits.pdf" width="100%" height="800"></iframe>
