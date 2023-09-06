@@ -2,12 +2,5 @@ site_name: School Wiki
 nav:
   - Home: index.md
   - Classes:
-    - Circuits I: 'junior/circuitsI/circuitsI.md'
+    - Circuits I: 'junior/circuits1/circuits1.md'
     - Computer Networks: 'senior/Computer_Networks/Computer_Networks.md'
-    - PDF: 'docs/media/circuits.pdf'
-markdown_extensions:
-  - pymdownx.pathconverter:
-      base_path: 'YOUR_REPO_NAME' # default: ''
-      relative_path: '' # default ''
-      absolute: true # default: false
-      tags: 'a script img link object embed'
