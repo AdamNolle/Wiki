@@ -19,3 +19,7 @@ A: Application
 ### Cahoot-01-4
 Q:
 A: Network 
+
+### Cahoot-02-1
+Q: What is not a benefit of P2P over central services? 
+A: Ease of coding 
