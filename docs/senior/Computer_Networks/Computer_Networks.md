@@ -23,3 +23,14 @@ A: Network
 ### Cahoot-02-1
 Q: What is not a benefit of P2P over central services? 
 A: Ease of coding 
+
+### Cahoot-02-2
+Q: Application layer address is most commonly a tuple of what? 
+A: Port, IP
+
+
+## Cahoot-02-3 
+Q: It is impossible to achieve data-reliability when using UDP (using any mechanism).
+A: False
+
+
