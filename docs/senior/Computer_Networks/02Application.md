@@ -199,3 +199,47 @@ e.g., HTTP, SMTP
 e.g., Skype (sued to be open, fun story)
 
 ## Web and HTTP
+
+### Web server and clients
+- **HTTP** hypertext transfer protocol 
+- Web's application layer protocol 
+- client/server model 
+    - **client:** browser that requests, receives, (using HTTP protocol) and "displays" Web objects 
+    - **server:** Web server sends (using HTTP protocol) objects in response to requests 
+
+**Web pages**
+- A Web page (also called a document) consists of objects.
+- An object is simply a file such as an HTML file, a JPEG image, a Java applet, or a video clip that is addressable by a single URL. 
+- If a Web page contains HTML text and five JPEG images, then the web page has six objects: the base HTML file plus the five images.
+- The base HTML file references the other objects in the page with the objects' URLs.
+- Each URL has two components: 
+    - the **hostname** of the server that houses the object and 
+    - the object's **path name.**
+
+**HTTP/1 and HTTP/2 use TCP (not UDP)**
+- The HTTP client first initiates a TCP connection with the server. 
+- Once the connection is established, the browser and the server processes access TCP through their socket interfaces. 
+- Server sends requested files to clients without storing any state information about the client, a stateless protocol. 
+- Client initiates TCP connection (creates socket) to server, port 80
+- Server accepts TCP connection from client
+- HTTP messages (application-layer protocol messages) exchanged between browser (HTTP client) and Web server (HTTP server)
+- TCP connection closed
+
+## Persistence 
+- HTTP is "stateless" 
+- Server maintains no information about past client request as a part of the protocol itself
+    - It could do so in other ways, but that would not be part of HTTP
+- Protocols that maintain "state" are complex!
+- Past history (state) must be maintained 
+- If server/client crashes, their views of "state" may be inconsistent, must be reconciled
+
+**HTTP can choose either:**
+- Each request/response pair sent over a separate TCP connection (non-persistent connections), or
+- All of the requests and their corresponding responses sent over the same TCP connection (persistent connections)
+
+**HTTP sequence** 
+A base HTML file and 10 JPEG images, and that all 11 of these objects reside on the same server: 
+
+1. HTTP client process initiates to the server on port number 80, which is the default port number for HTTP. Associated with the TCP connection, there will be a socket at the client and a socket at the server. 
+2. HTTP client sends an HTTP request message to the server via its socket. The request message includes the path name /someDepartment/home.index. 
+3. HTTP server process receives the request message via its socket, retrieves the object 
