@@ -29,8 +29,10 @@ Q: Application layer address is most commonly a tuple of what?
 A: Port, IP
 
 
-## Cahoot-02-3 
+### Cahoot-02-3 
 Q: It is impossible to achieve data-reliability when using UDP (using any mechanism).
 A: False
 
-
+### Cahoot-02-7
+Q: Which protocol does going to https://www.gmail.com to send an email 
+A: HTTP SMTP
